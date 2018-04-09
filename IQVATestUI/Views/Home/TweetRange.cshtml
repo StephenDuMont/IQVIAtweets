@@ -16,7 +16,7 @@
         </form>
     </div>
     <div class="col-sm-7">
-        <h2>TweetRange: @Html.Raw(ViewBag.end.ToShortDateString()) - @Html.Raw(ViewBag.start.ToShortDateString())</h2>
+        <h2>TweetRange: @Html.Raw(ViewBag.start.ToShortDateString()) - @Html.Raw(ViewBag.end.ToShortDateString())</h2>
         @foreach (Tweet tweet in ViewBag.Tweets)
         {
             <div class="well Tweet">
