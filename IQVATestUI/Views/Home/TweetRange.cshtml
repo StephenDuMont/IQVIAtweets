@@ -1,0 +1,31 @@
+﻿
+
+@using IQVATest;
+
+
+
+<div class="row">
+    <div class="col-sm-3 container">
+        <form id="DateRangeForm" action="/Home/TweetRange" method="get">
+            <label for="start">Start Date:</label>
+            <input name="start" class='date-picker' />
+
+            <label for="end">End Date:&nbsp;</label>
+            <input name="end" class='date-picker' />
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="col-sm-7">
+        <h2>TweetRange: @Html.Raw(ViewBag.end.ToShortDateString()) - @Html.Raw(ViewBag.start.ToShortDateString())</h2>
+        @foreach (Tweet tweet in ViewBag.Tweets)
+        {
+            <div class="well Tweet">
+                <div>
+                    <b>Date - @tweet.stamp.ToLongDateString() </b>
+                </div>
+                <div class="tweet-body">@Html.Raw(tweet.text)</div>
+            </div>
+        }
+
+    </div>
+</div>

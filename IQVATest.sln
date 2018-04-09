@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQVATest", "IQVATest\IQVATest.csproj", "{757D249C-00E8-401A-AEE2-3D2977F121C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQVATestUI", "IQVATestUI\IQVATestUI.csproj", "{679165EC-18C6-49DF-9E55-DAF646DCFF0B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{757D249C-00E8-401A-AEE2-3D2977F121C0} = {757D249C-00E8-401A-AEE2-3D2977F121C0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQVATestUI.Tests", "IQVATestUI.Tests\IQVATestUI.Tests.csproj", "{26B994EC-8B96-4D90-A5F7-51D8F3290A7A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{26967D2A-1D7A-485C-B325-4229ED097493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQVATestCL", "IQVATestCL\IQVATestCL.csproj", "{9A773A90-4B72-4CE1-A624-0EFAC515063A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{757D249C-00E8-401A-AEE2-3D2977F121C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757D249C-00E8-401A-AEE2-3D2977F121C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757D249C-00E8-401A-AEE2-3D2977F121C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757D249C-00E8-401A-AEE2-3D2977F121C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679165EC-18C6-49DF-9E55-DAF646DCFF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679165EC-18C6-49DF-9E55-DAF646DCFF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679165EC-18C6-49DF-9E55-DAF646DCFF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679165EC-18C6-49DF-9E55-DAF646DCFF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B994EC-8B96-4D90-A5F7-51D8F3290A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B994EC-8B96-4D90-A5F7-51D8F3290A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B994EC-8B96-4D90-A5F7-51D8F3290A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B994EC-8B96-4D90-A5F7-51D8F3290A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26967D2A-1D7A-485C-B325-4229ED097493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26967D2A-1D7A-485C-B325-4229ED097493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26967D2A-1D7A-485C-B325-4229ED097493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26967D2A-1D7A-485C-B325-4229ED097493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A773A90-4B72-4CE1-A624-0EFAC515063A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A773A90-4B72-4CE1-A624-0EFAC515063A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A773A90-4B72-4CE1-A624-0EFAC515063A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A773A90-4B72-4CE1-A624-0EFAC515063A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4091F176-142A-4360-818C-895BE9EF904F}
+	EndGlobalSection
+EndGlobal
